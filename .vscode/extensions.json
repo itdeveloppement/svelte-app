@@ -1,3 +1,8 @@
 {
-  "recommendations": ["svelte.svelte-vscode"]
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "ms-vsliveshare.vsliveshare",
+    "yzhang.markdown-all-in-one",
+    "svelte.svelte-vscode"
+  ]
 }
