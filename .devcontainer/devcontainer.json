@@ -1,0 +1,25 @@
+{
+  "name": "Svelte APP",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USER_ARG": "${localEnv:USER}"
+    }
+  },
+  "remoteUser": "${localEnv:USER}",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-vsliveshare.vsliveshare",
+        "yzhang.markdown-all-in-one",
+        "svelte.svelte-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": [
+    "/workspaces/svelte-app/.devcontainer/setup.sh"
+  ],
+  "forwardPorts": [5173]
+}
